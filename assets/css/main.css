@@ -1,0 +1,496 @@
+#app {
+    overflow-x: hidden !important;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+p,
+a {
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+}
+
+.highlight {
+    color: #29BB89;
+}
+
+.dark-highlight {
+    color: #1E6F5C;
+}
+
+.btn-primary {
+    background-color: #29BB89;
+    border: none;
+    font-weight: 500;
+}
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:focus {
+    background-color: #25a87b;
+}
+.btn-primary:focus {
+    box-shadow: 0 0 0 .25rem #94ddc4;
+}
+
+.btn-outline-primary {
+    border: 2px solid #29BB89;
+    color: #29BB89;
+    font-weight: 500;
+}
+.btn-outline-primary:hover {
+    background-color: #29BB89;
+    color: #fff;
+    border: 2px solid #29BB89;
+}
+.btn-outline-primary:focus {
+    box-shadow: 0 0 0 .25rem #94ddc4;
+}
+
+/* Navbar */
+.nav-link {
+    color: #1E6F5C !important;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    position: relative;
+}
+.nav-link:hover {
+    color: #29BB89 !important;
+}
+.nav-link::after {
+    content: "";
+    display: inline-block;
+    width: 0;
+    height: 2px;
+    background-color: #29BB89;
+    position: absolute;
+    bottom: 4px;
+    left: 0;
+    transition: width .2s;
+}
+.nav-link:hover::after {
+    width: 20px;
+}
+
+/* HEADER */
+header {
+    background-color: #D4F1E7;
+    padding-bottom: 100px;
+    background-image: url(../images/bg-hero.svg);
+    background-size: 500px;
+    background-repeat: no-repeat;
+    background-position: -220px -90px;
+}
+
+/* HERO */
+.heading {
+    font-size: 3rem;
+}
+#dana-card {
+    opacity: 0;
+    animation: dana 1.5s;
+    transform: translate(0, -20px);
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;  
+}
+#ovo-card {
+    opacity: 0;
+    animation: ovo 1.5s;
+    transform: translate(0, -20px);
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;  
+}
+#gopay-card {
+    transform: translateY(-20px);
+    opacity: 0;
+    animation: gopay 1s;
+    animation-delay: 2.5s;
+    animation-fill-mode: forwards;  
+}
+#second-layer {
+    opacity: 0;
+    animation: second-layer 1s;
+    animation-delay: 3.6s;
+    animation-fill-mode: forwards;  
+}
+
+#home {
+    transform: translateY(100%);
+    animation: home-screen 1.5s;
+    animation-delay: 1.5s;
+    animation-fill-mode: forwards;
+}
+
+.mobile-app {
+    width: 100%;
+    height: 100%;
+}
+
+.scene {
+    background-image: url(../images/bg-hero-2.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* DIGIPAY SPESIAL */
+.spesial {
+    margin-top: -50px;
+    padding: 50px 0;
+    background: #fff;
+    border-radius: 50px 50px 0 0;
+}
+
+.spesial .card {
+    border-radius: 28px;
+    border: 1px solid #29BB89;
+    box-shadow: 0 45px 30px -30px rgba(0, 0, 0, 0.3);
+    transition: .3s;
+}
+
+.spesial .card:hover {
+    transform: translateY(-30px);
+    box-shadow: 0 60px 30px -20px rgba(0, 0, 0, 0.3);
+}
+
+.card.bg-green {
+    background-color: #29BB89;
+    border: none !important;
+    color: #fff;
+}
+
+
+.spesial .card-body {
+    padding: 1.5rem;
+}
+
+.spesial .card-img-top {
+    height: 60px;
+    width: auto;
+}
+
+/* FITUR */
+.fitur {
+    margin-top: 50px;
+    padding: 50px 0;
+    padding-bottom: 100px;
+    background: #D4F1E7;
+    border-radius: 50px 50px 0 0;
+}
+
+.accordion-button {
+    border-radius: 12px !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+.accordion-item {
+    margin: 12px 0;
+    background: #D4F1E7;
+    border-radius: 12px !important;
+    border: 2px solid #9e9e9e;
+}
+
+.accordion-item:hover .accordion-button {
+    color: #29BB89;
+}
+
+.accordion-item.active {
+    border: 2px solid #29BB89;
+}
+.accordion-button:not(.collapsed) {
+    color: #29BB89;
+}
+.accordion-button::after  {
+    display: none;
+}
+.chevron {
+    transition: .4s;
+}
+.accordion-button:not(.collapsed) .chevron {
+    transform: rotateZ(180deg);
+    fill: #29BB89 !important;
+}
+
+.fitur-screen {
+    padding: 0 6rem;
+    width: 100%;
+    object-fit: contain;
+}
+
+.fitur-screen.animate {
+    animation: fade-up .5s;
+}
+
+/* REVIEW */
+.review {
+    background-image: url(../images/bg-review.svg);
+    background-color: #fff;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 50px 50px 0 0;
+    margin-top: -50px;
+    padding: 150px 0;
+}
+
+.review-card {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 14px;
+    padding: 3rem 2rem;
+    display: flex;
+    align-items: center;
+    border: 2px solid rgba( 255, 255, 255, 1 );
+    flex-wrap: wrap;
+    /* box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.2 ); */
+}
+
+.client-pic {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 40px;
+}
+.client-pic img{
+    border-radius: 50%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.client-review {
+    width: 100%;    
+}
+
+.client-review img {
+    width: 32px;
+}
+
+.client-review p {
+    pointer-events: all !important;
+    cursor: text;
+}
+
+.splide__pagination li {
+    transform: translateY(30px);
+}
+
+.splide__pagination__page.is-active {
+    background: #29BB89;
+}
+
+.splide__pagination__page {
+    background: #fff;
+}
+
+.client-review p {
+    font-size: 1.2rem;
+}
+
+.client-review .client-name {
+    font-size: 1rem;
+    color: #383838;
+}
+/* DOWNLOAD NOW */
+.download-now {
+    padding: 100px 0;
+}
+.download-now .download-wrapper{
+    background-color: #29BB89;
+    border-radius: 40px;
+}
+
+.phone-mockup {
+    position: relative;
+    padding-top: 2rem;
+}
+
+.phone-mockup img{
+    width: 100%;
+    bottom: 0;
+}
+
+.btn-download {
+    width: 154px;
+    height: 45.5px;
+    background-size: cover;
+    background-position: center;
+}
+.pstore {
+    background-image: url(../images/googleplay.png);
+}
+.appstore {
+    background-image: url(../images/appstore.png);
+}
+
+/* FOOTER */
+footer {
+    background-color: #D4F1E7;
+    background-image: url(../images/blue-circle.svg), url(../images/purple-circle.svg);
+    background-repeat: no-repeat;
+    background-size: 600px;
+    background-position: -100px -150px, 130% 100px;
+    border-radius: 50px 50px 0 0;
+    padding: 100px 0;
+}
+
+footer a {
+    text-decoration: none;
+    color: #383838;
+    font-weight: 500;
+}
+
+footer a:hover {
+    color: #000
+}
+
+.link-footer ul  {
+    list-style: none;
+    padding: 0;
+}
+
+.link-footer ul li {
+    margin: 12px 0;
+}
+
+.link-footer ul li a {
+    text-decoration: none;
+}
+
+@keyframes fade-up {
+    from {
+        transform: translateY(40%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes gopay {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes home-screen {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes second-layer {
+    from {
+        transform: translate(0);
+    }
+    to {
+        transform: translate(183px, -93px);
+        opacity: 1;
+    }
+}
+
+@keyframes dana {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px);
+    }
+    100% {
+        transform: translate(-330px, -20px);
+        opacity: 1;
+    }
+}
+
+@keyframes ovo {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        transform: translate(0, -20px);
+    }
+    100% {
+        transform: translate(330px, -20px);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    .card {
+        min-height: 300px;
+    }
+
+    .fitur-screen {
+        padding: 0 13rem;
+    }
+
+    .review {
+        background-image: url(../images/bg-review.svg),
+                            url(../images/profile-reviews-1.png), 
+                            url(../images/profile-reviews-2.png);
+            background-size: 60%, 140px, 140px;
+        background-position: center, 10%, 90%;
+    }
+
+    .client-pic {
+        width: 30%;
+        margin-bottom: 0;
+    }
+
+    .client-review {
+        width: 70%;
+        padding-left: 28px;
+    }
+
+    .phone-mockup img{
+        position: absolute;
+        width: 370px;
+        right: 0;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .nav-link {
+        padding: .5rem 1rem !important;
+    }
+
+    .nav-link::after {
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    
+    .fitur-screen {
+        padding: 0 3rem;
+    }
+
+    .review {
+        background-size: 60%, 200px, 200px;
+    }
+
+    .client-pic {
+        width: 25%;
+    }
+
+    .client-review {
+        width: 75%;
+    }
+
+    .phone-mockup img {
+        width: 400px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .phone-mockup img {
+        width: 340px;
+    }
+}
